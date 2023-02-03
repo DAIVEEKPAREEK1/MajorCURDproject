@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../CSS/main.css">
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <form class="form" onsubmit="validateForm(event)">
+          <div class="top-header">
+            <header>Registration</header>
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              class="input"
+              placeholder="Username"
+              name="username"
+              id="username"
+              required
+            />
+            <i class="fa fa-user icon"></i>
+          </div>
+          <div class="input-field">
+            <input
+              type="email"
+              class="input"
+              placeholder="email id"
+              id="useremail"
+              name="useremail"
+              required
+            />
+            <i class="fa fa-envelope icon"></i>
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              class="input"
+              placeholder="password"
+              id="userPassword"
+              name="userPassword"
+              required
+            />
+            <i class="fa fa-key icon"></i>
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              class="input"
+              placeholder="Conform Password"
+              id="confirmUserPass"
+              name="confirmUserPass"
+              required
+            />
+            <i class="fa fa-key icon"></i>
+          </div>
+          <div class="input-field">
+            <input type="submit" class="submit" value="signUp" />
+          </div>
+          <div class="registrationForm">
+            <a href="../index.html">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../JS/registration.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+* {
+  font-family: poppins, sans-serif;
+}
+body {
+  background-color: rgb(117, 218, 255);
+}
+.form {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px;
+}
+.input-feild {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  height: 45px;
+  width: 87%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: #000;
+  padding: 0 0 0 45px;
+  border: 0.5px solid black;
+  background: rgba(255, 255, 255, 0.1);
+}
+i {
+  position: relative;
+  top: -33px;
+  left: 17px;
+}
+.submit {
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3;
+}
+.rememberMeCheckbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+}
+.left {
+  display: flex;
+}
+label a {
+  text-decoration: none;
+}
+.registrationForm {
+  text-align: center;
+  margin: 10px;
+}
+.registrationForm a {
+  color: #000;
+  text-decoration: none;
+}
+.navBar {
+  max-width: 100%;
+  margin: 0%;
+}
+/* .adminTable {
+  margin-top: ;
+} */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../CSS/main.css" />
+</head>
+
+<body>
+  <div class="box">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/images.png" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+
+          Blogger</a>
+        <!-- <a class="navbar-brand" href="#">Admin</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-success" type="submit">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <form action="" onsubmit="blogSubmit(event)">
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <input type="submit" id="submit" value="SUBMIT" />
+        <input type="button" id="draft" onclick="blogDraft()" value="DRAFT" />
+      </form>
+      <div id="allMsgDiv">
+        <div id="doneDiv">
+
+        </div>
+        <div id="pendingDiv">
+
+        </div>
+      </div>
+      <!-- <table class="table table-striped" id="adminTable">
+          <thead>
+            <tr>
+              <th scope="col">SNO</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Content</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table> -->
+    </div>
+  </div>
+  <script src="../JS/admin.js"></script>
+</body>
+
+</html>
